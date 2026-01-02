@@ -6,14 +6,14 @@ static int sensor_count = 0;
 
 void led_task(void) {
     if (led_count < 10) {
-        uart_puts("LED\n");
+        uart_puts("LED_Operation\n");
         led_count++;
     }
 }
 
 void sensor_task(void) {
     if (sensor_count < 10) {
-        uart_puts("SENSOR\n");
+        uart_puts("SENSOR_Operation\n");
         sensor_count++;
     }
 }
